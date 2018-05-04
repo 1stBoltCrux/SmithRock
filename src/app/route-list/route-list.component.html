@@ -3,19 +3,30 @@
     <input class='form-control' placeholder="Select maximum grade you wish to climb" #routeGrade>
     <button class="btn btn-danger" (click)="submitGrade(routeGrade.value); routeGrade.value='';">Filter by Grade </button>
   </div>
-  <div *ngFor="let route of childRouteList | filterGrade:filterByGrade" class="routeList">
-    <h3>{{route.name}}</h3>
-    <ul>
-      <li>Location: {{route.area}}</li>
-      <li>Grade: {{route.grade}}</li>
-      <li>Type: {{route.type}}</li>
-      <li>Height: {{route.height}}ft</li>
-    </ul>
-    <div class="description">
-      <p>{{route.description}}</p>
-    </div>
-    <div class="starRating">
-      <img src={{route.star}}>
+<h3>List of Smith Rock Climbs</h3>
+<div *ngFor="let route of childRouteList | filterGrade:filterByGrade" class="row">
+  <div class="col">
+    <div class="table-responsive max-height max-height-md-none max-height-xs-300">
+      <table class="table table-striped route-table">
+        <tbody>
+          <tr class="route-row">
+            <td class="route-row">
+              <a href="#">{{route.name}}</a>
+            </td>
+            <td class="route-row">
+              {{route.area}}
+            </td>
+            <td class="route-row">
+              <div class="starRating">
+                <img src={{route.star}} alt="">
+              </div>
+            </td>
+            <td class="route-row">
+              {{route.grade}}
+            </td>
+          </tr>
+        </tbody>
+      </table>
     </div>
   </div>
 </div>
