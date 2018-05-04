@@ -1,0 +1,17 @@
+.frontSplash {
+  background-image: url("../assets/smithrock2.jpg");
+  background-position: center;
+  background-size: cover;
+  height: 400px;
+}
+
+.topBar {
+margin: auto;
+text-align: center;
+font-size: 100px;
+color: white;
+}
+
+.topBar h1 {
+  font-size: 75px;
+}

@@ -5,13 +5,15 @@ import { FilterResultPipe } from './filterResult.pipe';
 
 import { AppComponent } from './app.component';
 import { RouteListComponent } from './route-list/route-list.component';
+import { NewsItemComponent } from './news-item/news-item.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     RouteListComponent,
-    FilterResultPipe
+    FilterResultPipe,
+    NewsItemComponent
   ],
   imports: [
     BrowserModule

@@ -1,0 +1,17 @@
+<div *ngFor="let item of childNewsList" class="newsItems">
+  <div class="articleTitle">
+    <h3>{{item.title}}</h3>
+    <img src='{{item.image}}'>
+  </div>
+  <h4>Author: {{item.author}}</h4>
+  <div class="articleBody">
+    <p>{{item.intro}}</p>
+    <p>{{item.body}}</p>
+  </div>
+  <div class="articleContact">
+    <p>{{item.contact}}</p>
+  </div>
+  <div class="articleBottom">
+
+  </div>
+</div>
