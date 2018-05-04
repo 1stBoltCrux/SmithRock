@@ -1,13 +1,35 @@
-    <div class="jumbotron frontSplash">
-      <div class="topBar">
-        <h1>Smith Rock Route Guide</h1>
-      </div>
-    </div>
-    <div class="newsRoute">
-      <div class="container routeListContainer">
-        <route-list [childRouteList]="masterRouteList"></route-list>
-      </div>
-      <div class="container newsListContainer">
-            <news-item [childNewsList]="masterNewsList"></news-item>
-      </div>
-    </div>
+<div class="jumbotron frontSplash">
+  <div class="topBar">
+    <h1>Smith Rock Route Guide</h1>
+  </div>
+</div>
+<div class="newsRoute">
+  <div class="container routeListContainer">
+    <route-list [childRouteList]="masterRouteList"></route-list>
+  </div>
+  <div class="container newsListContainer">
+    <news-item [childNewsList]="masterNewsList"></news-item>
+  </div>
+</div>
+<div class="footerArea1 row">
+  <div class="col-md col1">
+    <img src="../assets/climbericon.svg" alt="">
+  </div>
+  <div class="col-md">
+    <img src="../assets/bikericon.svg" alt="">
+  </div>
+  <div class="col-md">
+    <img src="../assets/powdericon.svg" alt="">
+  </div>
+</div>
+<div class="footerArea1 row">
+  <div class="col-md col1">
+    <img src="../assets/hikericon.svg" alt="">
+  </div>
+  <div class="col-md">
+    <img src="../assets/runnericon.svg" alt="">
+  </div>
+  <div class="col-md">
+    <img src="../assets/reiicon.png" alt="">
+  </div>
+</div>
