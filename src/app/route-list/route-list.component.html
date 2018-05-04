@@ -1,5 +1,5 @@
 <div class="container">
-  <div *ngFor="let route of childRouteList" class="routeList">
+  <div *ngFor="let route of childRouteList | filterGrade" class="routeList">
     <h3>{{route.name}}</h3>
     <ul>
       <li>Location: {{route.area}}</li>
@@ -7,6 +7,9 @@
       <li>Type: {{route.type}}</li>
       <li>Height: {{route.height}}ft</li>
     </ul>
+    <div class="description">
+      <p>{{route.description}}</p>
+    </div>
     <div class="starRating">
       <img src={{route.star}}>
     </div>
