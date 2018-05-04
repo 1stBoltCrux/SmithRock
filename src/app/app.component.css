@@ -15,3 +15,7 @@ color: white;
 .topBar h1 {
   font-size: 75px;
 }
+
+.newsRoute {
+  display: flex;
+}

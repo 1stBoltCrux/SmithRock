@@ -3,5 +3,11 @@
         <h1>Smith Rock Route Guide</h1>
       </div>
     </div>
-    <news-item [childNewsList]="masterNewsList"></news-item>
-    <route-list [childRouteList]="masterRouteList"></route-list>
+    <div class="newsRoute">
+      <div class="container routeListContainer">
+        <route-list [childRouteList]="masterRouteList"></route-list>
+      </div>
+      <div class="container newsListContainer">
+            <news-item [childNewsList]="masterNewsList"></news-item>
+      </div>
+    </div>
