@@ -1,7 +1,7 @@
 <div class="container">
   <div class="form-group">
     <input class='form-control' placeholder="Select maximum grade you wish to climb" #routeGrade>
-    <button class="btn btn-danger" (click)="submitGrade(routeGrade.value)">Filter by Grade </button>
+    <button class="btn btn-danger" (click)="submitGrade(routeGrade.value); routeGrade.value='';">Filter by Grade </button>
   </div>
   <div *ngFor="let route of childRouteList | filterGrade:filterByGrade" class="routeList">
     <h3>{{route.name}}</h3>
