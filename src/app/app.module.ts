@@ -6,6 +6,7 @@ import { FilterResultPipe } from './filterResult.pipe';
 import { AppComponent } from './app.component';
 import { RouteListComponent } from './route-list/route-list.component';
 import { NewsItemComponent } from './news-item/news-item.component';
+import { NavBarComponent } from './nav-bar/nav-bar.component';
 
 
 @NgModule({
@@ -13,7 +14,8 @@ import { NewsItemComponent } from './news-item/news-item.component';
     AppComponent,
     RouteListComponent,
     FilterResultPipe,
-    NewsItemComponent
+    NewsItemComponent,
+    NavBarComponent
   ],
   imports: [
     BrowserModule

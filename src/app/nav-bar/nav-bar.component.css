@@ -1,0 +1,54 @@
+a {
+  text-decoration: none;
+  color: white;
+}
+
+.frontSplash {
+  /*background-image: url("../../assets/smithrock2.jpg");*/
+  background-color: black;
+  background-position: center;
+  background-size: cover;
+  height: 400px;
+}
+
+.topBar {
+margin: auto;
+text-align: center;
+font-size: 100px;
+color: white;
+}
+
+.topBar h1 {
+  font-size: 75px;
+}
+.navBar {
+    background-color: #2a2a2a;
+}
+.navButtons {
+
+  height: 40px;
+  margin-left: 100px;
+}
+
+.navButtons a {
+  margin-left: 20px;
+}
+
+.navBarLower {
+  height: 75px;
+  background-color: black;
+}
+
+.navBarLowerContent {
+  height: 50px;
+  margin-left: 120px;
+
+}
+
+.navBarLowerContent img {
+  max-height: 100%;
+}
+
+.navBarLowerContent a {
+    margin-left: 20px;
+}
