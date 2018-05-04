@@ -1,5 +1,7 @@
 <div class="container">
-  <div *ngFor="let route of childRouteList | filterGrade" class="routeList">
+<input #routeGrade>
+<button (click)="submitGrade(routeGrade.value)">Filter by Grade </button>
+  <div *ngFor="let route of childRouteList | filterGrade:filterByGrade" class="routeList">
     <h3>{{route.name}}</h3>
     <ul>
       <li>Location: {{route.area}}</li>

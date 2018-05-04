@@ -9,6 +9,12 @@ import { Route } from '../models/route.model'
 export class RouteListComponent {
   @Input() childRouteList: Route[];
 
+filterByGrade: number = 40;
 
+submitGrade(routeGrade){
+  console.log(routeGrade)
+  let grade = parseInt(routeGrade);
+  this.filterByGrade = grade;
 
+}
 }

@@ -8,10 +8,10 @@ import { Route } from './models/route.model';
 
 export class FilterResultPipe implements PipeTransform {
 
-  transform(input: Route[]){
+  transform(input: Route[], desiredGrade){
     let filterResult: Route[] = [];
     for (let i = 0; i < input.length; i++) {
-      if(input[i].grade < 20){
+      if(input[i].grade <= desiredGrade){
         filterResult.push(input[i]);
       }
     }
