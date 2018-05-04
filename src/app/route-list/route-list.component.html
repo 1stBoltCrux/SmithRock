@@ -2,12 +2,13 @@
   <div *ngFor="let route of childRouteList" class="routeList">
     <h3>{{route.name}}</h3>
     <ul>
-      <li>{{route.area}}</li>
-      <li>{{route.grade}}</li>
-      <li>{{route.type}}</li>
-      <li>{{route.height}}</li>
+      <li>Location: {{route.area}}</li>
+      <li>Grade: {{route.grade}}</li>
+      <li>Type: {{route.type}}</li>
+      <li>Height: {{route.height}}ft</li>
     </ul>
-
-
+    <div class="starRating">
+      <img src={{route.star}}>
+    </div>
   </div>
 </div>
