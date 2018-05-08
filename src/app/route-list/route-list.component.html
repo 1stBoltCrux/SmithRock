@@ -4,7 +4,7 @@
     <button class="btn btn-danger" (click)="submitGrade(routeGrade.value); routeGrade.value='';">Filter by Grade </button>
   </div>
 <h3>List of Smith Rock Climbs</h3>
-<div *ngFor="let route of routesArray | async" class="row">
+<div *ngFor="let route of routesArray | async | filterGrade:filterByGrade" class="row">
   <div class="col">
     <div class="table-responsive max-height max-height-md-none max-height-xs-300">
       <table class="table table-striped route-table">
@@ -30,5 +30,3 @@
     </div>
   </div>
 </div>
-
-<!-- filterGrade:filterByGrade -->

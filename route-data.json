@@ -1,44 +1,82 @@
 { "routes": [{
-    "name": "Snuffy Smith",
-    "grade": 15,
+  "name": "Snuffy Smith",
+  "grade": 15,
+  "type": "Sport",
+  "height": 80,
+  "description": "A knob and edge climb on a small pinnacle with a contrived start and enjoyable face climb finish",
+  "area": "The Fourth Horseman",
+  "star": "../assets/3star.png"
+  }, {
+    "name": "Taiwan On",
+    "grade": 20,
     "type": "Sport",
-    "height": 80,
-    "description": "A knob and edge climb on a small pinnacle with a contrived start and enjoyable face climb finish",
+    "height": 60,
+    "description": "An enjoyable arete climb with tricky moves and a crux near the fourth bolt",
     "area": "The Fourth Horseman",
-    "star": "../assets/3star.png"
+    "star": "../assets/4star.png"
     }, {
-      "name": "Taiwan On",
+      "name": "No Golf Shoes",
       "grade": 20,
       "type": "Sport",
       "height": 60,
-      "description": "An enjoyable arete climb with tricky moves and a crux near the fourth bolt",
+      "description": "This route gets most of it's rating from it's difficult bouldery start.",
+      "area": "The Fourth Horseman",
+      "star": "../assets/3star.png"
+    },
+    {
+      "name": "Tuff It Out",
+      "grade": 19,
+      "type": "Sport",
+      "height": 70,
+      "description": "A bouldery start on a honeycomb overhang then on to easy moves on low quality rock",
+      "area": "The Fourth Horseman",
+      "star": "../assets/2star.png"
+    },
+    {
+      "name": "Pack Animal Direct",
+      "grade": 19,
+      "type": "Trad",
+      "height": 40,
+      "description": "This route gets most of it's rating from it's difficult bouldery start.",
       "area": "The Fourth Horseman",
       "star": "../assets/4star.png"
+      }],
+    "news":[{
+      "title": "Smith Rock Spring Thing",
+      "author": "Marie Harkless",
+      "intro": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+      "body": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+      "contact": "Contact: Marie Harkless, 555-555-5555 smithrockspringthing@smithrock.org",
+      "image": "..assets/smithclimber1.jpg"
       }, {
-        "name": "No Golf Shoes",
-        "grade": 20,
-        "type": "Sport",
-        "height": 60,
-        "description": "This route gets most of it's rating from it's difficult bouldery start.",
-        "area": "The Fourth Horseman",
-        "star": "../assets/3star.png"
-  },
-  {
-    "name": "Tuff It Out",
-    "grade": 19,
-    "type": "Sport",
-    "height": 70,
-    "description": "A bouldery start on a honeycomb overhang then on to easy moves on low quality rock",
-    "area": "The Fourth Horseman",
-    "star": "../assets/2star.png"
-  },
-  {
-    "name": "Pack Animal Direct",
-    "grade": 19,
-    "type": "Trad",
-    "height": 40,
-    "description": "A 30 ft right facing dihedral capped by a small roof, a thought provoking stem climb that feels hard for the grade.",
-    "area": "The Fourth Horseman",
-    "star": "../assets/5star.png"
-  }]
-}
+        "title": "Terrebonne Sees Record Tourism Numbers",
+        "author": "Jamal Spencer",
+        "intro": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+        "body": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+        "contact": "Contact: Jamal Spencer, 555-555-5555 smithrockspringthing@smithrock.org",
+        "image": "..assets/smithclimber1.jpg"
+        }, {
+          "title": "Rattlesnake Warning at Skull Hollow",
+          "author": "Samantha Whaler",
+          "intro": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+          "body": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+          "contact": "Contact: Samantha Whaler, 555-555-5555 smithrockspringthing@smithrock.org",
+          "image": "..assets/smithclimber1.jpg"
+        },
+        {
+          "title": "Young Bend Local Climbs 'Just do it' 5.14c",
+          "author": "Cal Benninger",
+          "intro": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+          "body": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+          "contact": "Contact: Cal Benninger, 555-555-5555 smithrockspringthing@smithrock.org",
+          "image": "..assets/smithclimber1.jpg"
+        },
+        {
+          "title": "Smith Rock Eagle Nesting Closure",
+          "author": "Sam Erman",
+          "intro": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+          "body": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+          "contact": "Contact: Sam Erman, 555-555-5555 smithrockspringthing@smithrock.org",
+          "image": "..assets/smithclimber1.jpg"
+      }]
+    }
