@@ -1,6 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FilterResultPipe } from './filterResult.pipe';
+import { routing } from './app.routing';
 
 
 import { AppComponent } from './app.component';
@@ -29,6 +30,7 @@ export const firebaseConfig = {
   ],
   imports: [
     BrowserModule,
+    routing,
     AngularFireModule.initializeApp(firebaseConfig),
     AngularFireDatabaseModule
   ],
