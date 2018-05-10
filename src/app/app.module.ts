@@ -11,6 +11,8 @@ import { NavBarComponent } from './nav-bar/nav-bar.component';
 import { masterFirebaseConfig } from './api-keys';
 import { AngularFireModule } from 'angularfire2';
 import { AngularFireDatabaseModule } from 'angularfire2/database';
+import { RouteDetailComponent } from './route-detail/route-detail.component';
+import { MainPageComponent } from './main-page/main-page.component';
 
 export const firebaseConfig = {
   apiKey: masterFirebaseConfig.apiKey,
@@ -26,7 +28,9 @@ export const firebaseConfig = {
     RouteListComponent,
     FilterResultPipe,
     NewsItemComponent,
-    NavBarComponent
+    NavBarComponent,
+    RouteDetailComponent,
+    MainPageComponent
   ],
   imports: [
     BrowserModule,
