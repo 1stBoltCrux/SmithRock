@@ -10,7 +10,7 @@
 
 .greyLine {
   width: 100%;
-  border: 1px solid #7b7972;
+  border-bottom: 1px solid #7b7972;
   background-color: black;
 }
 
@@ -26,7 +26,6 @@
 
 .footerInfo h4 {
   font-size: 14px;
-
 }
 
 .footerInfoHeader {

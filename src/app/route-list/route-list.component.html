@@ -6,64 +6,63 @@
     <input class='form-control' placeholder="Select maximum grade you wish to climb" #routeGrade>
     <button class="btn" (click)="submitGrade(routeGrade.value); routeGrade.value='';">Filter by Grade </button>
   </div>
-<h4>List of Smith Rock Routes</h4>
-<div *ngFor="let route of routesArray | async | filterGrade:filterByGrade"   class="row">
-  <div class="col">
-    <div class="table-responsive max-height max-height-md-none max-height-xs-300">
-      <table class="table table-striped route-table">
-        <tbody>
-          <tr class="route-row">
-            <td class="route-row">
-              <a  (click)="goToDetailPage(route)"><p class="nameLink">{{route.name}}</p></a>
-            </td>
-            <td class="route-row">
-              {{route.area}}
-            </td>
-            <td class="route-row">
-              <div class="starRating">
-                <img src={{route.star}} alt="">
-
-              </div>
-            </td>
-            <td class="route-row">
-              {{route.grade}}
-            </td>
-            <td>
-              <div class="delete">
-                <button (click)="beginDeletingRoute(route)" class="btn btn-danger">Remove Route</button>
-              </div>
-            </td>
-          </tr>
-        </tbody>
-      </table>
+  <h4>List of Smith Rock Routes</h4>
+  <div *ngFor="let route of routesArray | async | filterGrade:filterByGrade"   class="row">
+    <div class="col">
+      <div class="table-responsive max-height max-height-md-none max-height-xs-300">
+        <table class="table table-striped route-table">
+          <tbody>
+            <tr class="route-row">
+              <td class="route-row">
+                <a  (click)="goToDetailPage(route)"><p class="nameLink">{{route.name}}</p></a>
+              </td>
+              <td class="route-row">
+                {{route.area}}
+              </td>
+              <td class="route-row">
+                <div class="starRating">
+                  <img src={{route.star}} alt="">
+                </div>
+              </td>
+              <td class="route-row">
+                {{route.grade}}
+              </td>
+              <td>
+                <div class="delete">
+                  <button (click)="beginDeletingRoute(route)" class="btn btn-danger">Remove Route</button>
+                </div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
     </div>
   </div>
-</div>
-<div class="blueButton">
-<button (click)="addRouteClick(selectRoute)" class="btn">Create a New Route</button>
-</div>
-<div *ngIf="displayNewRouteForm === 0" class="newRoute">
-  <div class="inputContainer">
-    <div class="newName">
-      <label>What would you like to name the route?</label>
-      <input #newName>
-    </div>
-    <div class="newGrade">
-      <label>What grade is the route?</label>
-      <input #newGrade type="number">
-    </div>
-    <div class="newType">
-      <label>How is the route protected?</label>
-      <select #newType >
-        <option value="Trad">Trad</option>
-        <option value="Sport">Sport</option>
-        <option value="Mixed">Mixed</option>
-      </select>
-    </div>
-    <div class="newArea">
-      <label>What area of Smith Rock is this route in?</label>
-      <input #newArea>
-    </div>
+  <div class="blueButton">
+    <button (click)="addRouteClick(selectRoute)" class="btn">Create a New Route</button>
+  </div>
+  <div *ngIf="displayNewRouteForm === 0" class="newRoute">
+    <div class="inputContainer">
+      <div class="newName">
+        <label>What would you like to name the route?</label>
+        <input #newName>
+      </div>
+      <div class="newGrade">
+        <label>What grade is the route?</label>
+        <input #newGrade type="number">
+      </div>
+      <div class="newType">
+        <label>How is the route protected?</label>
+        <select #newType >
+          <option value="Trad">Trad</option>
+          <option value="Sport">Sport</option>
+          <option value="Mixed">Mixed</option>
+        </select>
+      </div>
+      <div class="newArea">
+        <label>What area of Smith Rock is this route in?</label>
+        <input #newArea>
+      </div>
       <div class="newHeight">
         <label>How high is the route in feet?</label>
         <input #newHeight type="number">
@@ -89,5 +88,5 @@
       <div class="addButton blueButton">
         <button (click)="submitNewClimb(newName.value, newGrade.value, newType.value, newHeight.value, newDescription.value, newArea.value, newStar.value, newImage.value); newName.value=''; newGrade.value=''; newType.value=''; newHeight.value=''; newDescription.value=''; newArea.value=''; newStar.value=''; newImage.value='';" class="btn ">Add Your Route.</button>
       </div>
+    </div>
   </div>
-</div>

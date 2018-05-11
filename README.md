@@ -23,6 +23,11 @@ Find, list, add and delete particular climbing routes within Smith Rock State Pa
 * Program will have a featured routes section.
 * Program will have a more extensive database.
 
+# Known Bugs
+
+* FIND ROUTES BUTTON IS CURRENTLY UNAVAILABLE
+* FilterResultPipe creates an array message in the console but runs as it is intended.
+
 
 
 ## Setup/Installation Requirements
