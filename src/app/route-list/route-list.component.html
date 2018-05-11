@@ -1,9 +1,12 @@
 <div class="container listLeft">
+  <h3><strong>Beyond the Guidebook: The Definitive Climbing Resource</strong></h3>
+  <div class="topLine">
+  </div>
   <div class="form-group">
     <input class='form-control' placeholder="Select maximum grade you wish to climb" #routeGrade>
     <button class="btn btn-danger" (click)="submitGrade(routeGrade.value); routeGrade.value='';">Filter by Grade </button>
   </div>
-<h3>List of Smith Rock Climbs</h3>
+<h4>List of Smith Rock Routes</h4>
 <div *ngFor="let route of routesArray | async | filterGrade:filterByGrade"   class="row">
   <div class="col">
     <div class="table-responsive max-height max-height-md-none max-height-xs-300">

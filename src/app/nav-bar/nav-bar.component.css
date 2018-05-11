@@ -1,3 +1,7 @@
+.fullNavBar {
+  margin-bottom: 20px;
+}
+
 a {
   text-decoration: none;
   color: white;
@@ -92,9 +96,19 @@ color: white;
   height: 30px;
 
 }
+.forumLeft {
+  max-width: 60%;
+}
+.forumRight {
+  max-width: 100%;
+}
+.forumEntry {
+  display: flex
+}
 
 .forumCenter {
   overflow: hidden;
+
 }
 .forumCenter hr {
 border-bottom: 1px dashed #7b7972;
@@ -102,4 +116,9 @@ height: 16px;
 border-top: 0px;
 margin: 0 4px;
 padding-top: 5px;
+
+}
+
+.rightHeader {
+  text-align: left;
 }

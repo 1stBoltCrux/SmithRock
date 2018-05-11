@@ -11,3 +11,7 @@
   border: 1px solid #7b7972;
   background-color: black;
 }
+
+.footerArea1 img {
+  max-width: 60px;
+}

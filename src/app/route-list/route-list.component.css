@@ -7,7 +7,7 @@ td img {
 }
 
 .listLeft {
-
+border-right: 1px solid #e3e3e3;
 }
 
 .col1{
@@ -22,4 +22,10 @@ td img {
 .nameLink {
   color: #467bae;
   font-size: 18px;
+}
+
+.topLine {
+  margin-bottom: 20px;
+  width: 100%;
+  border-bottom: 6px solid #336799;
 }

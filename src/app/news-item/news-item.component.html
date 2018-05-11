@@ -1,11 +1,19 @@
+
+<div class="newsContainer">
+  <h3><strong>Leading News</strong></h3>
+  <div class="topLine">
+  </div>
+</div>
 <div *ngFor="let item of childNewsList" class="newsItems">
   <div class="articleTitle">
     <h3>{{item.title}}</h3>
     <img src='{{item.image}}'>
   </div>
   <h4>Author: {{item.author}}</h4>
-  <div class="articleBody">
+  <div class="articleIntro">
     <p>{{item.intro}}</p>
+  </div>
+  <div class="articleBody">
     <p>{{item.body}}</p>
   </div>
   <div class="articleContact">

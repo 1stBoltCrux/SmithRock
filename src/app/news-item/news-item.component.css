@@ -1,3 +1,10 @@
 .articleTitle img {
   max-width: 100%;
+  margin-bottom: 20px;
+}
+
+.topLine {
+  margin-bottom: 20px;
+  width: 100%;
+  border-bottom: 6px solid #336799;
 }
