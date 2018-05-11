@@ -4,16 +4,24 @@
 
 ## Description
 
-Find, list and edit particular climbing routes within Smith Rock State Park.
+Find, list, add and delete particular climbing routes within Smith Rock State Park.
 
 ## Specifications
 
 | Specification | Input | Output |
 | --- | --- | --- |
 | Program will list route objects | Input: Route('Snuffy Smith', '5.9', 'Sport', 90ft, 'Four Horseman Area' etc...) | Output: Snuffy Smith is a 90 ft, grade 5.9 sport route in the Four Horseman area of Smith Rock!  |
-| Program will allow user to leave comment on routes | Input: I didn't much care for this route. The bolt spacing is unsafe and the anchor seems questionable! | Output: Snuffy Smith is a 90 ft, grade 5.9 route in the Four Horseman area of Smith Rock! - user comment - I didn't much care for this route. The bolt spacing is unsafe and the anchor seems questionable!   |
-| Program will list routes in order of difficulty from easiest to most difficult | Input: Route('Snuffy Smith' etc...), Route('Phone Call from Satan' etc...), etc... | Output: Phone Call from Satan 5.8, Snuffy Smith 5.9, Caffeine Free 5.10b, Heinous Cling 5.12a  |
-| Program will filter routes and only show routes within the users specifications | Input: Anything in the 5.10 range) | Output: Caffeine Free 5.10b, Wedding Day 5.10b, No Golf Shoes 5.10c  |
+| Program will allow user to add routes | Input: Name: "The Quickening", Height: 70ft, Grade: "22", ..etc  | Output: The Quickening is a 70 ft, grade 22 ...etc  |
+| Program will allow user to delete routes | Input: Delete: Snuffy Smith) | Output: Caffeine Free 5.10b, Wedding Day 5.10b, No Golf Shoes 5.10c  |
+| Program will filter routes depending on a users input | Input: Find Routes Below Grade: 19 | Output: Phone Call from Satan 5.8, Snuffy Smith 5.9, Caffeine Free 5.10b  |
+| Program will allow user route to a details page of a particular climb | Input: Click: Snuffy Smith  | Output: Snuffy Smith's details page  |
+
+
+# Wish-list Features
+* Program will have a better defined search/filter function.
+* Program will have a comments section.
+* Program will have a featured routes section.
+* Program will have a more extensive database.
 
 
 

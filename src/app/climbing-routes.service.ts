@@ -22,7 +22,7 @@ export class ClimbingRoutesService {
 
 
    getRouteById(routeId: string){
-     return this.database.object('routes/' + routeId);
+     return this.database.object('routes/' + routeId)
    }
 
    addRoute(newRoute: Route) {
