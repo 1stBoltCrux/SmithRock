@@ -11,7 +11,6 @@ import { FirebaseListObservable } from 'angularfire2/database';
   providers: [ClimbingRoutesService]
 })
 export class RouteListComponent implements OnInit {
-  // @Input() childRouteList: Route[];
 
 filterByGrade: number = 40;
 

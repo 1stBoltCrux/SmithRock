@@ -2,16 +2,3 @@
 .newsRoute {
   display: flex;
 }
-.footerContainer {
-  background-color: black;
-}
-
-.footerArea1 {
-  background-color: black;
-}
-
-.greyLine {
-  width: 100%;
-  border: 1px solid #7b7972;
-  background-color: black;
-}

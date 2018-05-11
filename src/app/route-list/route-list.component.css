@@ -14,3 +14,12 @@ td img {
   display: flex;
   flex-direction: column;
 }
+
+.nameLink:hover {
+  cursor: pointer;
+  color: #12406b;
+}
+.nameLink {
+  color: #467bae;
+  font-size: 18px;
+}

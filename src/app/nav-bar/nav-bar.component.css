@@ -23,6 +23,7 @@ color: white;
 }
 .navBar {
     background-color: #2a2a2a;
+
 }
 .navButtons {
 
@@ -42,6 +43,9 @@ color: white;
 .navBarLowerContent {
   height: 50px;
   margin-left: 120px;
+  display: flex;
+  padding-top: 10px;
+
 
 }
 
@@ -51,4 +55,25 @@ color: white;
 
 .navBarLowerContent a {
     margin-left: 20px;
+}
+.main-img-div img {
+  height: 330px;
+  max-width: 100%
+}
+
+.centerCol {
+  background-color: #2a2a2a;
+  font-size: 20px;
+}
+
+.rightCol {
+  font-size: 20px;
+}
+
+.logoDiv {
+  height: 50px;
+}
+
+.navBarLowerLinks {
+  padding-top: 15px;
 }

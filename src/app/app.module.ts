@@ -13,6 +13,7 @@ import { AngularFireModule } from 'angularfire2';
 import { AngularFireDatabaseModule } from 'angularfire2/database';
 import { RouteDetailComponent } from './route-detail/route-detail.component';
 import { MainPageComponent } from './main-page/main-page.component';
+import { FooterComponent } from './footer/footer.component';
 
 export const firebaseConfig = {
   apiKey: masterFirebaseConfig.apiKey,
@@ -30,7 +31,8 @@ export const firebaseConfig = {
     NewsItemComponent,
     NavBarComponent,
     RouteDetailComponent,
-    MainPageComponent
+    MainPageComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
