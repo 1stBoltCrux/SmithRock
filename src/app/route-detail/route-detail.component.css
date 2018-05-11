@@ -4,5 +4,23 @@
 }
 
 .detailImage {
+  padding: 20px;
+}
 
+.detailContainer {
+  display: flex;
+  background-color: #f2f2f2;
+
+
+}
+.detailCenter {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.detailInfo {
+  margin-left: 20px;
+  max-width: 300px;
+  padding: 20px;
 }

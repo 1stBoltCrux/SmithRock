@@ -1,17 +1,24 @@
 <nav-bar></nav-bar>
-<div>
-  <div class="detailImage">
-    <img src='{{routeToDisplay.image}}' alt="">
-  </div>
-  <h3>{{routeToDisplay?.name}}</h3>
-  <h4>{{routeToDisplay?.grade}}</h4>
-  <p>{{routeToDisplay?.description}}</p>
-  <p>{{routeToDisplay?.$key}}</p>
-</div>
+<div class="detailCenter">
+  <div class="detailContainer">
+    <div class="detailImage">
+      <img src='{{routeToDisplay.image}}' alt="">
+    </div>
+    <div class="detailInfo">
+      <div class="detailName">
+          <h3><strong>Route Name: </strong> {{routeToDisplay?.name}}</h3>
+      </div>
+      <div class="detailGrade">
+        <h4><strong>Route Grade: </strong> {{routeToDisplay?.grade}}</h4>
+      </div>
+      <div class="detailLocation">
+        <h4><strong>Route Location: </strong>{{routeToDisplay?.area}}</h4>
+      </div>
+      <div class="detailDescription">
+        <p><strong>Route Description: </strong> {{routeToDisplay?.description}}</p>
+      </div>
+    </div>
 
-<!-- <div class="comment">
-  <h3>Leave a comment about this route:</h3>
-  <textarea #comment rows="8" cols="80"></textarea>
-  <button (click)="submitComment(comment.value) comment.value='';" class="btn btn-danger">Submit Comment</button>
-</div> -->
+  </div>
+</div>
 <app-footer></app-footer>

@@ -68,7 +68,8 @@ color: white;
 
 .centerCol {
   background-color: #2a2a2a;
-  font-size: 20px;
+  font-size: 18px;
+  margin-right: 50px;
 }
 
 .rightCol {
@@ -121,4 +122,15 @@ padding-top: 5px;
 
 .rightHeader {
   text-align: left;
+}
+
+.centerCol table {
+  margin-bottom: 5px;
+}
+
+.gradeSelect {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 8px;
+
 }
