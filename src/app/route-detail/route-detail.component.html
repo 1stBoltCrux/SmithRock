@@ -1,5 +1,8 @@
 <nav-bar></nav-bar>
 <div>
+  <div class="detailImage">
+    <img src='{{(routeToDisplay | async)?.image}}' alt="">
+  </div>
   <h3>{{(routeToDisplay | async)?.name}}</h3>
   <h4>{{(routeToDisplay | async)?.grade}}</h4>
   <p>{{(routeToDisplay | async)?.description}}</p>
