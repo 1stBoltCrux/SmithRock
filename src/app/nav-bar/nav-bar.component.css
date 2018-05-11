@@ -1,3 +1,13 @@
+button {
+  color: white;
+  background-color: #336799;
+  border-color: #336799;
+}
+
+button:hover {
+  background-color: #5f8bb6
+}
+
 .fullNavBar {
   margin-bottom: 20px;
 }

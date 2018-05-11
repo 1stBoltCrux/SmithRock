@@ -1,9 +1,11 @@
 .footerContainer {
+  color: white;
   background-color: black;
 }
 
 .footerArea1 {
   background-color: black;
+  margin-bottom: 10px;
 }
 
 .greyLine {
@@ -13,5 +15,21 @@
 }
 
 .footerArea1 img {
-  max-width: 60px;
+  max-width: 50px;
+}
+
+.footerInfo {
+  display: flex;
+  height: 50px;
+  font-size: 12px;
+}
+
+.footerInfo h4 {
+  font-size: 14px;
+
+}
+
+.footerInfoHeader {
+  margin-left: 5px;
+  margin-top: 5px;
 }

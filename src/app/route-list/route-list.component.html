@@ -2,9 +2,9 @@
   <h3><strong>Beyond the Guidebook: The Definitive Climbing Resource</strong></h3>
   <div class="topLine">
   </div>
-  <div class="form-group">
+  <div class="form-group blueButton">
     <input class='form-control' placeholder="Select maximum grade you wish to climb" #routeGrade>
-    <button class="btn btn-danger" (click)="submitGrade(routeGrade.value); routeGrade.value='';">Filter by Grade </button>
+    <button class="btn" (click)="submitGrade(routeGrade.value); routeGrade.value='';">Filter by Grade </button>
   </div>
 <h4>List of Smith Rock Routes</h4>
 <div *ngFor="let route of routesArray | async | filterGrade:filterByGrade"   class="row">
@@ -39,35 +39,55 @@
     </div>
   </div>
 </div>
-<button (click)="addRouteClick(selectRoute)" class="btn btn-danger">Create a New Route</button>
+<div class="blueButton">
+<button (click)="addRouteClick(selectRoute)" class="btn">Create a New Route</button>
+</div>
 <div *ngIf="displayNewRouteForm === 0" class="newRoute">
-  <label>What would you like to name the route?</label>
-  <input #newName>
-  <label>What grade is the route?</label>
-  <input #newGrade type="number">
-  <label>How is the route protected?</label>
-  <select #newType class="form-control">
-  <option value="Trad">Trad</option>
-  <option value="Sport">Sport</option>
-  <option value="Mixed">Mixed</option>
-  </select>
-  <label>How high is the route in feet?</label>
-  <input #newHeight type="number">
-  <label>Describe the route.</label>
-  <textarea #newDescription rows="8" cols="80"></textarea>
-  <label>What area of Smith Rock is this route in?</label>
-  <input #newArea>
-  <label>How would you rate this route?</label>
-  <select #newStar class="form-control">
-  <option value="../assets/1star.png">One star</option>
-  <option value="../assets/2star.png">Two stars</option>
-  <option value="../assets/3star.png">Three stars</option>
-  <option value="../assets/4star.png">Four stars</option>
-  <option value="../assets/5star.png">Five stars</option>
-  </select>
-  <label>Link an image URL for the route.</label>
-  <input #newImage>
-  <div class="addButton">
-      <button (click)="submitNewClimb(newName.value, newGrade.value, newType.value, newHeight.value, newDescription.value, newArea.value, newStar.value, newImage.value); newName.value=''; newGrade.value=''; newType.value=''; newHeight.value=''; newDescription.value=''; newArea.value=''; newStar.value=''; newImage.value='';" class="btn btn-danger">Add Your Route.</button>
+  <div class="inputContainer">
+    <div class="newName">
+      <label>What would you like to name the route?</label>
+      <input #newName>
+    </div>
+    <div class="newGrade">
+      <label>What grade is the route?</label>
+      <input #newGrade type="number">
+    </div>
+    <div class="newType">
+      <label>How is the route protected?</label>
+      <select #newType >
+        <option value="Trad">Trad</option>
+        <option value="Sport">Sport</option>
+        <option value="Mixed">Mixed</option>
+      </select>
+    </div>
+    <div class="newArea">
+      <label>What area of Smith Rock is this route in?</label>
+      <input #newArea>
+    </div>
+      <div class="newHeight">
+        <label>How high is the route in feet?</label>
+        <input #newHeight type="number">
+      </div>
+      <div class="newStar">
+        <label>How would you rate this route?</label>
+        <select #newStar >
+          <option value="../assets/1star.png">One star</option>
+          <option value="../assets/2star.png">Two stars</option>
+          <option value="../assets/3star.png">Three stars</option>
+          <option value="../assets/4star.png">Four stars</option>
+          <option value="../assets/5star.png">Five stars</option>
+        </select>
+      </div>
+      <div class="newDescription">
+        <label>Describe the route.</label>
+        <textarea #newDescription rows="8" cols="80"></textarea>
+      </div>
+      <div class="newImage">
+        <label>Link an image URL for the route.</label>
+        <input #newImage>
+      </div>
+      <div class="addButton blueButton">
+        <button (click)="submitNewClimb(newName.value, newGrade.value, newType.value, newHeight.value, newDescription.value, newArea.value, newStar.value, newImage.value); newName.value=''; newGrade.value=''; newType.value=''; newHeight.value=''; newDescription.value=''; newArea.value=''; newStar.value=''; newImage.value='';" class="btn ">Add Your Route.</button>
+      </div>
   </div>
 </div>
