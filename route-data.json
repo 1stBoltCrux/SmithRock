@@ -7,7 +7,8 @@
    "area": "The Fourth Horseman",
    "star": "../assets/3star.png",
    "id": "0",
-   "image": "../assets/snuffysmith.jpg"
+   "image": "../assets/snuffysmith.jpg",
+   "comment": ""
    }, {
      "name": "Taiwan On",
      "grade": 20,
@@ -17,7 +18,8 @@
      "area": "The Fourth Horseman",
      "star": "../assets/4star.png",
      "id": "1",
-     "image": "../assets/taiwanon.jpg"
+     "image": "../assets/taiwanon.jpg",
+     "comment": ""
      }, {
        "name": "No Golf Shoes",
        "grade": 20,
@@ -27,7 +29,8 @@
        "area": "The Fourth Horseman",
        "star": "../assets/3star.png",
        "id": "2",
-       "image": "../assets/nogolfshoes.jpg"
+       "image": "../assets/nogolfshoes.jpg",
+       "comment": ""
      },
      {
        "name": "Tuff It Out",
@@ -38,7 +41,8 @@
        "area": "The Fourth Horseman",
        "star": "../assets/2star.png",
        "id": "3",
-       "image": "../assets/tuffitout.jpg"
+       "image": "../assets/tuffitout.jpg",
+       "comment": ""
      },
      {
        "name": "Pack Animal Direct",
@@ -49,6 +53,7 @@
        "area": "The Fourth Horseman",
        "star": "../assets/4star.png",
        "id": "4",
-       "image": "../assets/packanimaldirect.jpg"
+       "image": "../assets/packanimaldirect.jpg",
+       "comment": ""
        }]
 }

@@ -3,11 +3,13 @@ import { AngularFireDatabase, FirebaseListObservable } from 'angularfire2/databa
 import { Route } from './models/route.model';
 import { News } from './models/news.model'
 import { RouteDetailComponent } from './route-detail/route-detail.component';
+
 // import { ALBUMS } from './mock-albums';
 
 @Injectable()
 export class ClimbingRoutesService {
     routesArray: FirebaseListObservable<any[]>;
+
 
     constructor(private database: AngularFireDatabase) {
       this.routesArray = database.list('routes');
@@ -16,8 +18,8 @@ export class ClimbingRoutesService {
 
   getRoutes(){
      return this.routesArray;
-
    }
+
 
    getRouteById(routeId: string){
      return this.database.object('routes/' + routeId);

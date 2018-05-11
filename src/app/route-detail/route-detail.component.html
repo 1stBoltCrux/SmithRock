@@ -7,4 +7,9 @@
   <h4>{{(routeToDisplay | async)?.grade}}</h4>
   <p>{{(routeToDisplay | async)?.description}}</p>
 </div>
+<!-- <div class="comment">
+  <h3>Leave a comment about this route:</h3>
+  <textarea #comment rows="8" cols="80"></textarea>
+  <button (click)="submitComment(comment.value) comment.value='';" class="btn btn-danger">Submit Comment</button>
+</div> -->
 <app-footer></app-footer>

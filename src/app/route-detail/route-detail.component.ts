@@ -15,6 +15,7 @@ import { Router } from '@angular/router';
 export class RouteDetailComponent implements OnInit {
     routeId: string;
     routeToDisplay;
+  
 
     constructor(
    // private router: Router,
@@ -29,5 +30,7 @@ export class RouteDetailComponent implements OnInit {
      });
      this.routeToDisplay = this.routeService.getRouteById(this.routeId);
    }
+
+
 
 }

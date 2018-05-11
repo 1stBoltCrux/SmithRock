@@ -11,8 +11,8 @@ import { FirebaseListObservable } from 'angularfire2/database';
   providers: [ClimbingRoutesService]
 })
 export class RouteListComponent implements OnInit {
-
-filterByGrade: number = 40;
+  displayNewRouteForm = null;
+  filterByGrade: number = 40;
 
 routesArray: FirebaseListObservable<any[]>;
 
@@ -30,6 +30,11 @@ goToDetailPage(clickedRoute) {
    let grade = parseInt(routeGrade);
    this.filterByGrade = grade;
 
+ }
+
+ addRouteClick() {
+   this.displayNewRouteForm = 0;
+   console.log(this.displayNewRouteForm);
  }
 
 
