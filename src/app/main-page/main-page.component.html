@@ -1,5 +1,46 @@
-<p>Hello!</p>
-
 <nav-bar></nav-bar>
-<route-list></route-list>
-<news-item [childNewsList]="masterNewsList"></news-item>
+<div class="newsRoute">
+  <div class="container routeListContainer">
+    <route-list></route-list>
+  </div>
+  <div class="container newsListContainer">
+    <news-item [childNewsList]="masterNewsList"></news-item>
+  </div>
+</div>
+<div class="footerContainer">
+  <div class="lineDiv row">
+    <div class="lineDiv col">
+      <hr class="greyLine">
+    </div>
+  </div>
+<div class="footerArea1 row">
+  <div class="col-md col1">
+    <img src="../assets/climbericon.svg" alt="">
+  </div>
+  <div class="col-md">
+    <img src="../assets/bikericon.svg" alt="">
+  </div>
+  <div class="col-md">
+    <img src="../assets/powdericon.svg" alt="">
+  </div>
+</div>
+<div class="footerArea1 row">
+  <div class="col-md col1">
+    <img src="../assets/hikericon.svg" alt="">
+  </div>
+  <div class="col-md">
+    <img src="../assets/runnericon.svg" alt="">
+  </div>
+  <div class="col-md">
+    <img src="../assets/reiicon.png" alt="">
+  </div>
+</div>
+<div class="lineDiv row">
+  <div class="lineDiv col">
+    <hr class="greyLine">
+  </div>
+</div>
+</div>
+
+<!-- 
+<route-list></route-list> -->
