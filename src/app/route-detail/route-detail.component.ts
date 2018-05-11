@@ -40,11 +40,6 @@ export class RouteDetailComponent implements OnInit {
      })
    }
 
-   beginDeletingRoute(routeToDelete){
-     console.log(routeToDelete);
-  if(confirm("Are you sure you want to delete this item from the inventory?")){
-    this.routeService.deleteRoute(routeToDelete);
-  }
-}
+
 
 }

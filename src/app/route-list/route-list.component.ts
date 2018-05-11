@@ -43,6 +43,13 @@ goToDetailPage(clickedRoute) {
     this.displayNewRouteForm = null;
  }
 
+ beginDeletingRoute(routeToDelete){
+   console.log(routeToDelete);
+if(confirm("Are you sure you want to delete this item from the inventory?")){
+  this.routeService.deleteRoute(routeToDelete);
+}
+}
+
 
 constructor(private router: Router, private routeService: ClimbingRoutesService) {}
 

@@ -19,10 +19,16 @@
             <td class="route-row">
               <div class="starRating">
                 <img src={{route.star}} alt="">
+
               </div>
             </td>
             <td class="route-row">
               {{route.grade}}
+            </td>
+            <td>
+              <div class="delete">
+                <button (click)="beginDeletingRoute(route)" class="btn btn-danger">Remove Route</button>
+              </div>
             </td>
           </tr>
         </tbody>
