@@ -15,7 +15,7 @@ import { Router } from '@angular/router';
 export class RouteDetailComponent implements OnInit {
     routeId: string;
     routeToDisplay;
-  
+
 
     constructor(
    // private router: Router,
@@ -28,9 +28,23 @@ export class RouteDetailComponent implements OnInit {
      this.route.params.forEach((urlParameters) => {
        this.routeId = urlParameters['id'];
      });
-     this.routeToDisplay = this.routeService.getRouteById(this.routeId);
+     this.routeService.getRouteById(this.routeId).subscribe(dataLastEmittedFromObserver => {
+       this.routeToDisplay = new Route(dataLastEmittedFromObserver.name,
+       dataLastEmittedFromObserver.grade,
+       dataLastEmittedFromObserver.type,
+       dataLastEmittedFromObserver.height,
+       dataLastEmittedFromObserver.description,
+       dataLastEmittedFromObserver.area,
+       dataLastEmittedFromObserver.star,
+       dataLastEmittedFromObserver.image)
+     })
    }
 
-
+   beginDeletingRoute(routeToDelete){
+     console.log(routeToDelete);
+  if(confirm("Are you sure you want to delete this item from the inventory?")){
+    this.routeService.deleteRoute(routeToDelete);
+  }
+}
 
 }

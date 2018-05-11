@@ -29,7 +29,9 @@ export class ClimbingRoutesService {
      this.routesArray.push(newRoute);
     }
 
-   // getRouteById(routeId: string){
-   //   return this.database.list('details/' + routeId);
-   // }
+    deleteRoute(localRouteToDelete){
+      console.log(localRouteToDelete.name);
+      let routeEntryInFirebase = this.getRouteById(localRouteToDelete.$key);
+      routeEntryInFirebase.remove();
+    }
 }

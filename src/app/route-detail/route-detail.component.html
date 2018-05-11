@@ -1,11 +1,15 @@
 <nav-bar></nav-bar>
 <div>
   <div class="detailImage">
-    <img src='{{(routeToDisplay | async)?.image}}' alt="">
+    <img src='{{routeToDisplay.image}}' alt="">
   </div>
-  <h3>{{(routeToDisplay | async)?.name}}</h3>
-  <h4>{{(routeToDisplay | async)?.grade}}</h4>
-  <p>{{(routeToDisplay | async)?.description}}</p>
+  <h3>{{routeToDisplay?.name}}</h3>
+  <h4>{{routeToDisplay?.grade}}</h4>
+  <p>{{routeToDisplay?.description}}</p>
+  <p>{{routeToDisplay?.$key}}</p>
+</div>
+<div class="delete">
+  <button (click)="beginDeletingRoute(routeToDisplay)" class="btn btn-danger">Delete This Route</button>
 </div>
 <!-- <div class="comment">
   <h3>Leave a comment about this route:</h3>
