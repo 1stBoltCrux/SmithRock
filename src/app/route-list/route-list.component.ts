@@ -37,6 +37,10 @@ goToDetailPage(clickedRoute) {
    console.log(this.displayNewRouteForm);
  }
 
+ submitNewClimb(name: string, grade: number, type: string, height: number, description: string, area: string, star: string, image: string){
+   let newRoute: Route = new Route(name, grade, type, height, description, area, star, image)
+    this.routeService.addRoute(newRoute);
+ }
 
 
 constructor(private router: Router, private routeService: ClimbingRoutesService) {}

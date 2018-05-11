@@ -15,7 +15,6 @@
             </td>
             <td class="route-row">
               {{route.area}}
-              {{route.$key}}
             </td>
             <td class="route-row">
               <div class="starRating">
@@ -33,5 +32,33 @@
 </div>
 <button (click)="addRouteClick(selectRoute)" class="btn btn-danger">Create a New Route</button>
 <div *ngIf="displayNewRouteForm === 0" class="newRoute">
-  <p>hey ya'll!</p>
+  <label>What would you like to name the route?</label>
+  <input #newName>
+  <label>What grade is the route?</label>
+  <input #newGrade type="number">
+  <label>How is the route protected?</label>
+  <select #newType class="form-control">
+  <option value="Trad">Trad</option>
+  <option value="Sport">Sport</option>
+  <option value="Mixed">Mixed</option>
+  </select>
+  <label>How high is the route in feet?</label>
+  <input #newHeight type="number">
+  <label>Describe the route.</label>
+  <textarea #newDescription rows="8" cols="80"></textarea>
+  <label>What area of Smith Rock is this route in?</label>
+  <input #newArea>
+  <label>How would you rate this route?</label>
+  <select #newStar class="form-control">
+  <option value="../assets/1star.png">One star</option>
+  <option value="../assets/2star.png">Two stars</option>
+  <option value="../assets/3star.png">Three stars</option>
+  <option value="../assets/4star.png">Four stars</option>
+  <option value="../assets/5star.png">Five stars</option>
+  </select>
+  <label>Link an image URL for the route.</label>
+  <input #newImage>
+  <div class="addButton">
+      <button (click)="submitNewClimb(newName.value, newGrade.value, newType.value, newHeight.value, newDescription.value, newArea.value, newStar.value, newImage.value); newName.value=''; newGrade.value=''; newType.value=''; newHeight.value=''; newDescription.value=''; newArea.value=''; newStar.value=''; newImage.value='';" class="btn btn-danger">Add Your Route.</button>
+  </div>
 </div>

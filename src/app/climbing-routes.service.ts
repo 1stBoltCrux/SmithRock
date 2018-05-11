@@ -25,6 +25,10 @@ export class ClimbingRoutesService {
      return this.database.object('routes/' + routeId);
    }
 
+   addRoute(newRoute: Route) {
+     this.routesArray.push(newRoute);
+    }
+
    // getRouteById(routeId: string){
    //   return this.database.list('details/' + routeId);
    // }

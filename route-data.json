@@ -6,9 +6,7 @@
    "description": "A knob and edge climb on a small pinnacle with a contrived start and enjoyable face climb finish",
    "area": "The Fourth Horseman",
    "star": "../assets/3star.png",
-   "id": "0",
-   "image": "../assets/snuffysmith.jpg",
-   "comment": ""
+   "image": "../assets/snuffysmith.jpg"
    }, {
      "name": "Taiwan On",
      "grade": 20,
@@ -17,9 +15,7 @@
      "description": "An enjoyable arete climb with tricky moves and a crux near the fourth bolt",
      "area": "The Fourth Horseman",
      "star": "../assets/4star.png",
-     "id": "1",
-     "image": "../assets/taiwanon.jpg",
-     "comment": ""
+     "image": "../assets/taiwanon.jpg"
      }, {
        "name": "No Golf Shoes",
        "grade": 20,
@@ -28,9 +24,7 @@
        "description": "This route gets most of it's rating from it's difficult bouldery start.",
        "area": "The Fourth Horseman",
        "star": "../assets/3star.png",
-       "id": "2",
-       "image": "../assets/nogolfshoes.jpg",
-       "comment": ""
+       "image": "../assets/nogolfshoes.jpg"
      },
      {
        "name": "Tuff It Out",
@@ -40,9 +34,7 @@
        "description": "A bouldery start on a honeycomb overhang then on to easy moves on low quality rock",
        "area": "The Fourth Horseman",
        "star": "../assets/2star.png",
-       "id": "3",
-       "image": "../assets/tuffitout.jpg",
-       "comment": ""
+       "image": "../assets/tuffitout.jpg"
      },
      {
        "name": "Pack Animal Direct",
@@ -52,8 +44,6 @@
        "description": "This route gets most of it's rating from it's difficult bouldery start.",
        "area": "The Fourth Horseman",
        "star": "../assets/4star.png",
-       "id": "4",
-       "image": "../assets/packanimaldirect.jpg",
-       "comment": ""
+       "image": "../assets/packanimaldirect.jpg"
        }]
 }
