@@ -54,7 +54,8 @@ color: white;
 }
 
 .navBarLowerContent a {
-    margin-left: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 .main-img-div img {
   height: 330px;
@@ -76,4 +77,18 @@ color: white;
 
 .navBarLowerLinks {
   padding-top: 15px;
+}
+
+.gradeSelect {
+  display: flex;
+}
+
+.gradeSelect p {
+  margin-left: 2px;
+  margin-right: 2px;
+}
+
+.appDiv img {
+  height: 30px;
+
 }
